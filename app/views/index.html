@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://cdn.socket.io/4.4.0/socket.io.min.js"
+      integrity="sha384-1fOn6VtTq3PWwfsOrk45LnYcGosJwzMHv+Xh/Jx5303FVOXzEnw0EpLv30mtjmlj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="w-screen h-screen bg-purple-400">
+      <div class="w-full h-full flex justify-center items-center">
+        <!-- welcome box -->
+        <div class="flex flex-col" id="info-wrapper">
+          <label class="font-mono text-3xl font-extrabold mb-2 text-purple-900"
+            >Enter Your Name</label
+          >
+          <input
+            type="text"
+            placeholder="Enter your name..."
+            class="
+              outline-none
+              pl-2
+              bg-purple-900
+              py-2
+              rounded
+              text-purple-400
+              w-80
+            "
+            id="name"
+          />
+          <button
+            class="
+              mt-2
+              border border-purple-900
+              py-1
+              rounded
+              w-40
+              text-purple-900
+              hover:bg-purple-900 hover:text-purple-400
+            "
+            onclick="onChat()"
+          >
+            Let's Chat
+          </button>
+        </div>
+        <!-- end of welcome box -->
+
+        <!-- message box -->
+        <div class="hidden" id="message-wrapper">
+          <!-- input box -->
+          <div class="w-full h-full">
+            <div
+              class="
+                w-full
+                py-2
+                flex
+                justify-center
+                items-center
+                text-purple-900
+              "
+              id="noti"
+            ></div>
+            <div id="content-box">
+
+            </div>
+            
+          <div class="fixed" style="bottom: 12%">
+            <input
+              type="text"
+              id="message"
+              class="
+                py-1
+                px-2
+                border border-purple-900
+                rounded
+                outline-none
+                bg-purple-300
+                text-purple-900
+                placeholder-purple-900
+              "
+              placeholder="Aa"
+              autofocus
+            />
+            <button
+              class="
+                bg-purple-900
+                py-1
+                rounded
+                border
+                px-2
+                text-purple-300
+                hover:border-purple-900
+                hover:bg-purple-300
+                hover:text-purple-900
+              "
+              onclick="sendMessage()"
+            >
+              Send
+            </button>
+          </div>
+        </div>
+        <!-- end of message box -->
+      </div>
+    </div>
+  </body>
+</html>
