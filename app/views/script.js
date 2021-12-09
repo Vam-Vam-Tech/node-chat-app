@@ -1,4 +1,4 @@
-var socket = io("http://localhost:8080");
+var socket = io("https://pyaw-ya-aung.herokuapp.com/");
 
 let user;
 
