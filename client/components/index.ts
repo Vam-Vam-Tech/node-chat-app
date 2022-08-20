@@ -1,3 +1,4 @@
 import ChatCard from "./ChatCard";
+import Message from "./Message";
 
-export { ChatCard }
+export { ChatCard,Message }
