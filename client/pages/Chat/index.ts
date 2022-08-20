@@ -1,7 +1,7 @@
-import Chat from "./Chat";
-import ChatDetail from "./ChatDetail";
-import ChatMessage from "./ChatMessage";
-import MessageHeader from "./MessageHeader";
-import MessageDetail from "./MessageDetail";
+import Chat from "./List/Chat";
+import ChatDetail from "./Detail/ChatDetail";
+import ChatMessage from "./InChat/ChatMessage";
+import MessageHeader from "./InChat/MessageHeader";
+import MessageBody from "./InChat/MessageBody";
 
-export {Chat, ChatDetail, ChatMessage, MessageDetail, MessageHeader}
+export {Chat, ChatDetail, ChatMessage, MessageBody, MessageHeader}

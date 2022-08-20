@@ -15,8 +15,8 @@ const ChatCard = ( {name,time,image} :IChatCard ) => {
 					src={image}
 					className="rounded-full"
 					alt=""
-					width={60}
-					height={60}
+					width={55}
+					height={55}
 				/>
 				<div className="space-y-1">
 					<p className="font-semibold text-gray-300">{name}</p>

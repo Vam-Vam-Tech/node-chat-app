@@ -10,7 +10,7 @@ const Home = () => {
       <div className="col-span-6">
         <ChatMessage/>
       </div>
-      <div className="col-span-3 bg-green-400">
+      <div className="col-span-3">
         <ChatDetail/>
       </div>
 		</div>

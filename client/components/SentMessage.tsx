@@ -2,19 +2,24 @@ import React from "react";
 import Image from "next/image";
 import Message from "./Message";
 
-interface ISentMessage{
-    message: any;
+interface ISentMessageProps {
+	messageType: any;
+	message: any;
 }
-const SentMessage = ({message}:ISentMessage) => {
+const SentMessage = ({ messageType,message }: ISentMessageProps) => {
 	return (
 		<div>
-			<div className="flex items-center gap-3 justify-end">
+			<div className="flex items-start gap-3 justify-end">
 				<div className="flex flex-col items-end">
 					<p className="text-gray-400 text-sm font-semibold mb-1 ml-0.5">
-						Lisa <span className="ml-1 mb-1 text-xs font-normal">11:11</span>
+						Me <span className="ml-1 mb-1 text-xs font-normal">11:11</span>
 					</p>
 					<div className="space-y-1">
-						<Message text={message}/>
+						{messageType === "text" ? (
+							<Message textType={true} message={message} />
+						) : (
+							<Message textType={false} message={message} />
+						)}
 					</div>
 				</div>
 				<Image
