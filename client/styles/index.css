@@ -3,3 +3,7 @@
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+.preview::-webkit-scrollbar {
+    width: 0px;
+}
