@@ -1,13 +1,14 @@
 {
-    "compilerOptions": {
-      "module": "commonjs",
-      "moduleResolution": "node",
-      "target": "es6",
-      "rootDir": "./",
-      "esModuleInterop": true,
-      "outDir": "./dist",
-      "sourceMap": true,
-      "resolveJsonModule": true,
-    }
-  }
-  
+	"compilerOptions": {
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"target": "es6",
+		"rootDir": "./",
+		"esModuleInterop": true,
+		"outDir": "./dist",
+		"sourceMap": true,
+		"strict": true,
+		"lib": ["esnext"],
+		"resolveJsonModule": true
+	}
+}

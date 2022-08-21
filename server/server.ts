@@ -2,6 +2,9 @@
 import "dotenv/config";
 import express, { Request, NextFunction } from "express";
 import cors from "cors";
+import mongoose from "mongoose";
+
+//custom imports
 import routes from "./routes";
 
 //ENV
@@ -39,5 +42,13 @@ io.on("connection", function (socket: any) {
 });
 
 httpServer.listen(PORT, () => {
+	mongoose
+		.connect(process.env.DATABASE_URL as string)
+		.then(() => {
+			console.log("Database Connected");
+		})
+		.catch((err) => {
+			console.log(err);
+		});
 	console.log("server is starting on port", PORT);
 });
