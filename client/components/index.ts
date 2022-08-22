@@ -7,6 +7,7 @@ import PreviewAvatar from "./PreviewAvatar";
 import LinkCard from "./LinkCard";
 import PhotoCard from "./PhotoCard";
 import VideoCard from "./VideoCard";
+import FormInput from "./FormInput";
 
 export {
 	ChatCard,
@@ -17,5 +18,6 @@ export {
 	PreviewAvatar,
 	LinkCard,
 	PhotoCard,
-	VideoCard
+	VideoCard,
+	FormInput
 };
