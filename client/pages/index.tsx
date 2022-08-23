@@ -1,5 +1,7 @@
 import React from "react";
-import { Chat, ChatDetail, ChatMessage } from "./Chat";
+import Chat from "./../components/pages/List/Chat";
+import { ChatMessage } from "./../components/pages/InChat";
+import { ChatDetail } from "./../components/pages/Detail";
 
 const Home = () => {
 	return (

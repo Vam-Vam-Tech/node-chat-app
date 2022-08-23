@@ -1,5 +1,5 @@
 import React from "react";
-import { VideoCard } from "../../../components";
+import { VideoCard } from "../..";
 
 const ShareVideo = () => {
 	return (

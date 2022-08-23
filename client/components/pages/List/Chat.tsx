@@ -69,7 +69,7 @@ const Chat = () => {
 				</div>
 				<div
 					className="overflow-y-scroll preview"
-					style={{ height: "430px" }}
+					// style={{ height: "430px" }}
 				>
 					{chatitems.map((item: any, index: number) => {
 						return (
